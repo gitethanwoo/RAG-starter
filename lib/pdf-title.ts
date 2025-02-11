@@ -1,10 +1,10 @@
 import { generateObject } from "ai"
 import { z } from "zod"
-import { openai } from '@ai-sdk/openai';
+import { google } from '@ai-sdk/google';
 
 export async function generatePDFTitle(text: string): Promise<{ title: string, author: string }> {
   const result = await generateObject({
-    model: openai('gpt-4o-mini'),
+    model: google('gemini-2.0-flash'),
     schema: z.object({
       title: z.string().describe('A clear, specific title for the document'),
       author: z.string().describe('The author of the document'),
