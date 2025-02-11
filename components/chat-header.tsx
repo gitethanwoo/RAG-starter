@@ -1,6 +1,5 @@
 import { Plus } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { ThemeLogo } from "@/components/theme-logo";
 
 interface ChatHeaderProps {
   hasInteracted: boolean;
@@ -17,7 +16,7 @@ export function ChatHeader({ hasInteracted, onNewChat }: ChatHeaderProps) {
       <div className="w-full bg-background px-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <ThemeLogo />
+            <span className="font-bold">brari</span>
           </div>
 
           <Button
