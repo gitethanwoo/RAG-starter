@@ -1,9 +1,6 @@
 ## Getting Started
 
-env keys
-
-
-# Created by Vercel CLI
+### env keys
 DEEPSEEK_API_KEY=
 
 ENRICH_PASSWORD=
